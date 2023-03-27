@@ -20,3 +20,4 @@ jobs:
           gist_id: "6041ad43e465c297c17ca195afd1b2b7"
           file_path: SOME_CONTENT.md
           gist_file_name: TEST.md
+          file_type: text
