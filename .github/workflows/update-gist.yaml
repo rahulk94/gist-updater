@@ -1,0 +1,22 @@
+name: "Update gist"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+        with:
+          ref: master
+      - name: Update coding test gists
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.TOKEN }}
+          gist_id: "6041ad43e465c297c17ca195afd1b2b7"
+          file_path: SOME_CONTENT.md
+          gist_file_name: TEST.md
