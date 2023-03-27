@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'SOME_CONTENT.md'
   # Allow manual dispatch
   workflow_dispatch:
 
